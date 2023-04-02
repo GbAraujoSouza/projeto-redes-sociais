@@ -81,6 +81,25 @@ main {
   transform: scale(1.06);
 }
 
+.link-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2rem;
+  background-color: brown;
+}
+.link-btn > a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+.link-btn:hover {
+  background-color: rgb(211, 53, 53);
+}
+.link-btn:hover > a {
+  text-decoration: underline;
+}
+
 #home-btn {
   background-image: url(/img/logo-home.jpg);
 }
