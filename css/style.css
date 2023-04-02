@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url(/img/fundo-madeira.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  min-width: 100vw;
+}
+main {
+  position: relative;
+  min-height: 100vh;
+}
+
+.main-frame {
+  background-image: url(/img/frame-iphone.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* size of the phone img */
+  width: 311px;
+  height: 627px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-frame > .home-img {
+  width: 267px;
+  height: 471px;
+  overflow: hidden;
+
+  background-color: lightskyblue;
+
+  position: relative;
+  top: 51.5%;
+  left: 51%;
+  transform: translate(-51%, -51.5%);
+}
+.main-frame > .home-img > img {
+  width: 100%;
+}
+
+.main-frame > .home-img.scrollable {
+  overflow: scroll;
+}
+
+.icons-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+
+  background-color: rgb(0 0 0/0.3);
+  backdrop-filter: blur(5px);
+  padding: 1em;
+  border-radius: 2em;
+}
+
+.btn {
+  width: 4rem;
+  height: 4rem;
+  background-size: cover;
+  border: none;
+  border-radius: 50%;
+  transition: transform 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.06);
+}
+
+#home-btn {
+  background-image: url(/img/logo-home.jpg);
+}
+#facebook-btn {
+  background-image: url(/img/logo-facebook.jpg);
+}
+#github-btn {
+  background-image: url(/img/logo-github.jpg);
+}
+#instagram-btn {
+  background-image: url(/img/logo-instagram.jpg);
+}
+#twitter-btn {
+  background-image: url(/img/logo-twitter.jpg);
+}
+#youtube-btn {
+  background-image: url(/img/logo-youtube.jpg);
+}
